@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <h1>Function(함수)</h1>
+        <h2>Basic</h2>
+        <ul>
+            <script>
+                function two(){
+                    document.write('<li>2-1</li>');
+                    document.write('<li>2-2</li>');
+                }
+                document.write('<li>1</li>');
+                two();
+                document.write('<li>3</li>');
+                two();
+            </script>
+        </ul>
+
+        <h2>Parameter(매개변수) & Arguments(인자)</h2>
+        <script>
+
+            function onePlusOne(){
+                document.write(1+1+'<br>');
+            }
+            /* 1과 1을 더한 다음 줄바꿈해서 문서에 표시해라 */
+
+            onePlusOne();
+            function sum(left, right){
+                document.write(left+right+'<br>');
+            }
+            /* left 변수와 right 변수를 더한 다음 줄바꿈해서 문서에 표시해라 */
+
+            sum(2,3); // 5
+            sum(3,4); // 7
+        </script>
+
+        <h2>Return(출력)</h2>
+        <script>
+            function sum2(left, right){
+                return left+right;
+            }
+            /* left 변수와 right 변수를 더해라 */
+
+            document.write(sum2(2,3)+'<br>');
+            document.write('<div style="color:red">'+sum2(2,3)+'</div>');
+            document.write('<div style="font-size:3rem;">'+sum2(2,3)+'</div>');
+        </script>
+
+    </body>
+</html>
